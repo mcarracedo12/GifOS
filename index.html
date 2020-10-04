@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GifOs!!</title>
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" id="estilo" type="text/css" href="css/day.css">
+</head>
+
+<body>
+    <header>
+        <div class="bar" id="mainbar">¡Bienvenidos/as a GifOs!! -------- Donde los gifs están./// Número de visitas
+        </div>
+
+        <div class="main-container" id="main-container">
+            <div class="back">
+                <img src="assets/arrow.svg" class="arrow" id="arrow" alt="back">
+                <a href="https://giphy.com/">
+                    <img class="day logo" src="assets/gifOF_logo.png" alt="gifos">
+                    <img class="dark logo" src="assets/gifOF_logo_dark.png" alt="gifos">
+                </a>
+            </div>
+            <div class="left" id="botones">
+                <button class="createbtn" id="buttonCrear">Crear Gifos</button>
+                <div class="contenedorTema">
+                    <div id="buttonTema" onclick="toggleMenu();">
+                        <button class="btntema">
+                            Elegir tema
+                        </button>
+                        <div class="captura" id="dropdown">
+                            <img class="day" src="assets/dropdown.svg" alt="tema">
+                            <img class="dark" src="assets/dropdown_white.svg" alt="tema">
+                        </div>
+                    </div>
+
+                    <ul id="theme">
+                        <li class="tema" id="day">Sailor Day</li>
+                        <li class="tema" id="dark">Sailor Night</li>
+                    </ul>
+                </div>
+                <div id="misGuifos"><u>M</u>is Guifos</div>
+            </div>
+
+        </div>
+
+        <!-- solo mostrar para crear guifos -->
+
+        <div class="hidden" id="cuadro1">
+            <div class="bar">
+                Crear guifos
+                <!-- <img class="close" src="assets/button3.svg"> -->
+            </div>
+            <div class="row">
+                <div>
+                    <img src="assets/window_img.png" alt="window">
+                </div>
+                <div class="instructions">
+                    <h4>Aquí podrás crear tus propios guifos</h4>
+                    <div class="instructions-box">
+                        <p>
+                            Crear tu <i><b>guifo</b></i> es muy fácil, graba cualquier imágen con tu cámara y obtén
+                            guifos
+                            personalizados. Los pasos para crear tus guifos son:<br /></p>
+                        <p><b>1) </b>Dar permisos de acceso a la cámara (sólo por el tiempo de uso)<br /></p>
+                        <p><b>2) </b>Capturar tu momento guifo<br /></p>
+                        <p><b>3) </b>Revisar el momento<br /></p>
+                        <p><b>4) </b>Listo para subir y compartir!<br /></p>
+                        <p>¿Quieres comenzar a crear tu <i><b>guifo</b></i> ahora?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <div></div>
+                <div class="right">
+                    <button class="createbtn" id="cancelar">Cancelar</button>
+                    <button class="createbtn" id="comenzar">Comenzar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cuadro2, hidden" id="cuadro2">
+            <div class="bar">
+                Un chequeo antes de empezar
+                <img class="close" src="assets/button3.svg" alt="close">
+            </div>
+            <div>
+                <div class="cuadrito">
+                    <video id="migifo"></video>
+                    <img id="preview" class="hidden" alt="preview" src="data:,">
+                </div>
+                <div class="buttons" id="buttonsCuadro2">
+                    <div></div>
+                    <div class="film">
+                        <button class="captura">
+                            <img src="assets/camera.svg" class="camera day" alt="camera">
+                            <img src="assets/camera_white.svg" class="camera dark" alt="camera">
+                        </button>
+                        <button class="createbtn" id="capture">Capturar</button>
+                    </div>
+                </div>
+                <div class="hidden" id="buttonsCuadro3">
+                    <div class="timer"><label>00</label>:<label>00</label>:<label id="minutes1">00</label>:<label
+                            id="seconds1">00</label></div>
+                    <div class="film">
+                        <button class="captura" id="captura3">
+                            <img class="recording dark" src="assets/recording.svg" alt="recording">
+                            <img class="recording day" src="assets/recording_dark.svg" alt="recording"></button>
+                        <button class="createbtn" id="listo">Listo</button>
+                    </div>
+                </div>
+                <div class="hidden" id="buttonsCuadro4">
+                    <div class="timer"><label>00</label>:<label>00</label>:<label id="minutes2">00</label>:<label
+                            id="seconds2">00</label></div>
+                    <div id="pink">
+                        <img class="day" src="assets/forward.svg" alt="play">
+                        <img class="dark" src="assets/forward-white.svg" alt="play">
+                    </div>
+                    <div id="myProgress">
+                        <div id="myBar"></div>
+                    </div>
+                    <div><button class="createbtn2" id="repeat">Repetir Captura</button></div>
+                    <div><button class="createbtn2" id="upload">Subir Guifo</button></div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="hidden" id="cuadro5">
+            <div class="bar">
+                Subiendo Guifo
+                <img class="close" src="assets/button3.svg" alt="close">
+            </div>
+            <div id="subiendo">
+                <div class="cuadrito">
+                    <img src="assets/globe_img.png" alt="globe">
+                    <p><strong>Estamos subiendo tu guifo...</strong></p>
+                    <div id="myProgress2">
+                        <div id="myBar2"></div>
+                    </div>
+                    <h5>Tiempo restante <del>38 años </del>algunos minutos</h5>
+                </div>
+                <div class="buttons">
+                    <div><button class="createbtn" id="cancelar2">Cancelar</button></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="hidden" id="cuadro6">
+            <div class="bar">
+                Guifo Subido Con Éxito
+                <img class="close" src="assets/button3.svg" alt="close">
+            </div>
+            <div>
+                <div class="cuadrito2">
+                    <img src="data:," id="preview2" alt="new gif">
+                    <div class="options" id="descarga">
+                        <p><b>Guifo creado con éxito</b></p>
+                        <button id="copyURL">Copiar Enlace Guifo</button>
+                    </div>
+                </div>
+                <div class="buttonsFin">
+                    <div><button class="createbtn" id="fin">Listo</button></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- fin de solo mostrar para crear guifos -->
+
+        <div class="buscador" id="buscador">
+            <div class="bar">Buscar</div>
+            <div class="search">
+                <input type="text" id="keyword" placeholder="Busca gifs, hashtags, temas, busca lo que quieras...">
+                <!-- </input> -->
+                <ul id="box-search">
+                    <li id="opcion1"><a class="option">Resultado de búsqueda sugerido</a></li>
+                    <li id="opcion2"><a class="option">Un resultado similar de búsqueda</a></li>
+                    <li id="opcion3"><a class="option">Y otro más</a></li>
+                </ul>
+
+                <button class="buscar" id="btn">
+                    <img id="lupa" class="dark lupa" src="assets/lupa_inactive.svg" alt="lupa"
+                        onmouseover="this.setAttribute('src', 'assets/lupa.svg');" onmouseout="this.setAttribute('src', 'assets/lupa_inactive.svg');
+                        ">
+                    <img id="lupa_day" class="day lupa" src="assets/lupa_inactive.svg" alt="lupa"
+                        onmouseover="this.setAttribute('src', 'assets/lupa_light.svg');" onmouseout="this.setAttribute('src', 'assets/lupa_inactive.svg');
+                        ">
+                    Buscar
+                </button>
+            </div>
+        </div>
+        <div id="tags">
+            <button class="tagButton">Flowers</button>
+            <button class="tagButton">Butterflies</button>
+            <button class="tagButton">Planets</button>
+        </div>
+
+    </header>
+
+    <section id="sugerencias">
+        <input id="sugerimos" placeholder="Hoy te sugerimos" class="input">
+        <!-- </input> -->
+
+        <div id="gridarea">
+
+        </div>
+
+    </section>
+
+
+    <section id="tendencias">
+        <input id="lookup" placeholder="Tendencias" class="input">
+        <div class="trends" id="trends">
+            <div class="simple">
+                <img src="data:," class="gifTrends" alt="gif">
+                <div class="bar bar1"></div>
+            </div>
+            <div class="simple">
+                <img src="data:," class="gifTrends" alt="gif">
+                <div class="bar bar1"></div>
+            </div>
+            <div class="simple">
+                <img src="data:," class="gifTrends" alt="gif">
+                <div class="bar bar1"></div>
+            </div>
+            <div class="simple">
+                <img src="data:," class="gifTrends" alt="gif">
+                <div class="bar bar1"></div>
+            </div>
+            <div class="double">
+                <img src="data:," class="gifTrends" alt="gif">
+                <div class="bar bar1"></div>
+            </div>
+            <div class="hide">
+            </div>
+            <div class="simple">
+                <img src="data:," class="gifTrends" alt="gif">
+                <div class="bar bar1"></div>
+            </div>
+            <div class="simple">
+                <img src="data:," class="gifTrends" alt="gif">
+                <div class="bar bar1"></div>
+            </div>
+            <div class="simple">
+                <img src="data:," class="gifTrends" alt="gif">
+                <div class="bar bar1"></div>
+            </div>
+            <div class="simple">
+                <img src="data:," class="gifTrends" alt="gif">
+                <div class="bar bar1"></div>
+            </div>
+            <div class="double">
+                <img src="data:," class="gifTrends" alt="gif">
+                <div class="bar bar1"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="misGuifosSection">
+        <input id="misLookup" placeholder="Mis Guifos" class="input">
+        <div class="misGifs" id="misGifs">
+
+        </div>
+    </section>
+
+
+    <script src="js/request.js"></script>
+    <script src="js/record.js"></script>
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+
+</body>
+
+</html>

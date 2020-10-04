@@ -1,0 +1,268 @@
+.day {
+    display: none;
+}
+.buscar .day {
+    display: none;
+}
+img.day {
+    display: none;
+}
+
+body {
+    background-color: #110038;
+}
+
+#gif div {
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    box-shadow: 0 1px 0 0 #110038;
+    color: #FFFFFF;
+}
+
+
+.bar {
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+.createbtn {
+    color: #FFFFFF;
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+.createbtn:hover{
+    color: #FFFFFF;
+    background: #CE36DB;
+}
+.createbtn:active{
+    color: #FFFFFF;
+    background: #CE36DB;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+#listo {
+    background: #FF6161;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.btntema {
+    color: #FFFFFF;
+    background: #EE3EFE;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+.btntema:hover{
+    background: #CE36DB;
+}
+.btntema:active{
+    background: #CE36DB;
+}
+.captura {
+    fill: #FFFFFF;
+    background: #EE3EFE;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+.captura img{
+    fill: #FFFFFF;
+}
+.captura:hover{
+    background: #CE36DB;
+}
+.captura:active{
+    background: #CE36DB;
+}
+#captura3 {
+    background: #FF6161;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;  
+}
+
+.mostrar {
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+
+.tema {
+    color:#110038;
+    background: #CCCCCC;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+.tema:hover {
+    color: #FFFFFF;
+    background: #2E32FB;
+    border: 1px solid rgba(51,53,143,0.20);
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+.tema:active {
+    color: #FFFFFF;
+    background: #2E32FB;
+    border: 1px solid rgba(51,53,143,0.20);
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+#misGuifos {
+    color: #FFFFFF;
+}
+#misGuifos:hover {
+    color: #FFFFFF;
+    outline: 1px dotted #FFFFFF;
+    outline-offset: -4px;
+}
+.buscador {
+    background: #B4B4B4;
+box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.buscador .search #rectangle {
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+input {
+    background: #FFFAFE;
+    border: 1px solid #2E32FB;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+}
+
+input::placeholder{
+    color: #110038;
+}
+
+.buscador .search #box-search{
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+
+.buscador.search #box-search #opcion2{
+    color:#110038;
+    background-color: #CCCCCC;
+}
+
+.buscador.search #box-search #opcion3{
+    color:#110038;
+    background-color: #CCCCCC;
+}
+
+.buscador .search #box-search #opcion1{
+    color:#110038;
+    background: #CCCCCC;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+
+.buscar {
+    background: #B4B4B4;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+    color: #8F8F8F;
+    line-height: 18px;}
+.buscar:hover{
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+.buscar:active{
+    background: #CE36DB;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    outline: 1px dotted #110038;
+    outline-offset: -4px;
+}
+
+#tags button {
+    background: #2E32FB;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+}
+#tags button:hover{
+    background: #2629CC;
+    border: 1px solid #4C2F99;
+    outline: 1px dotted #110038;
+    outline-offset: -4px;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+}
+.btn{
+    background: #2E32FB;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+}
+.btn:hover{
+    background: #2629CC;
+    border: 1px solid #4C2F99;
+    outline: 1px dotted #110038;
+    outline-offset: -4px;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.gifSug{
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+}
+
+#myprogress{
+    background: #B4B4B4;
+    border: 1px solid #979797;
+    box-shadow: inset 2px 2px 0 0 #E6E6E6, inset -2px -2px 0 0 #000000;
+}
+
+#myBar{
+    background-color: #EE3EFE;
+}
+
+#myprogress2{
+    background: #B4B4B4;
+    border: 1px solid #979797;
+    box-shadow: inset 2px 2px 0 0 #E6E6E6, inset -2px -2px 0 0 #000000;
+}
+
+#myBar2{
+    background-color: #EE3EFE;
+}
+
+.createbtn2{
+    color: #FFFFFF;
+    background: #110038;
+    border: 1px solid #B4B4B4;
+    box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+}
+.createbtn2:hover{
+    color: #FFFFFF;
+    outline: 1px dotted #B4B4B4;
+    outline-offset: -4px;
+    background: #110038;
+    border: 1px solid #B4B4B4;
+    box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+}
+.timer label {
+    color: #110038;
+}
+
+.cuadro6 .cuadrito2 .options p b{
+    color:#110038;
+}
+#copyURL {
+    color: #110038;
+}
+#downloadGif {
+    color: #110038;
+}
+#subiendo .cuadrito p strong {
+    color: #110038;
+}
+
+#subiendo .cuadrito h5 {
+    color: #00001A; 
+}
+#subiendo .cuadrito h5 del{
+    color: #00001A; 
+}
+#pink{
+    color: #FFFFFF;
+    background: #110038;
+    border: 1px solid #B4B4B4;
+    box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+}

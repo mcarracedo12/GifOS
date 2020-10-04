@@ -1,0 +1,854 @@
+* {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+body {
+    margin: 0px;
+}
+
+header{
+    padding: 0px;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+#mainbar {
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #FFFFFF;
+}
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 99.9% - 4px;
+    height: 24px;
+    padding: 0 0 0 6px;
+    margin-left: 0px;
+    align-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: inset 2px 0 0 0 #FFFFFF,
+    inset -2px 0 0 0 #B4B4B4;
+    color: #FFFFFF;
+}
+
+
+header .main-container {
+    display: inline-flex;
+    margin: 35px 8% 16px 8%;
+    width: 100%;
+    height: 115px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .main-container .back {
+    display: inline-flex;
+}
+
+.main-container .arrow {
+    width: 24px;
+    height: 24px;
+    margin-right: 7px;
+    display: none;
+    align-self: center;
+}
+
+header .main-container .logo {
+    align-self: flex-start;
+    width: 102.6px;
+    height: 64px;
+}
+
+header .main-container .left {
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    margin: 9px 8% 0px 35px;
+    padding-right: 8%;
+}
+
+
+.createbtn {
+    width: 144px;
+    height: 36px;
+    font-size: 16px;
+    line-height: 18px;
+}
+.createbtn2 {
+    width: 144px;
+    height: 36px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+header .left #buttonTema {
+    display: inline-flex;
+}
+
+.btntema {
+    font-weight: 400;
+    width: 131px;
+    height: 36px;
+    font-size: 16px;
+    letter-spacing: 0;
+    z-index: 1;
+    text-align: center;
+    line-height: 18px;
+    border: 1px solid #110038;
+}
+.btntema:hover{
+    outline: 1px dotted #110038;
+    outline-offset: -4px;
+}
+.btntema:active{
+    outline: 1px dotted #110038;
+    outline-offset: -4px;
+}
+
+
+header .left .contenedorTema {
+    width: 167px;
+}
+
+header .left .contenedorTema #dropdown {
+    z-index: 2;
+}
+
+header .left img {
+    width: 10px;
+    height: 6px;
+    align-self: center;
+}
+
+header .left ul {
+    display: none;
+    list-style: none;
+    z-index: 3;
+}
+
+header .left .mostrar {
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: 102px;
+    justify-content: center;
+    margin-top: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 140px;
+}
+
+#day {
+    margin: 10px;
+}
+#dark {
+    margin: 0 10px 10px 10px;
+}
+
+.tema {
+    font-weight: 400;
+    display: flex;
+    line-height: 22px;
+    width: 117px;
+    height: 22px;
+    padding: 7px 7px 7px 26px;
+} 
+
+#misGuifos {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 18px;
+    padding: 10px;
+}
+
+
+header .buscador {
+    margin-left: 8.5%;
+    width: 83.3%;
+    height: 99px;
+    justify-self: center;
+    text-align: left;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0%;
+}
+
+.buscador .search {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 75px;
+    margin: 0;
+    position: static;
+    flex-direction: row;
+}
+
+.buscador .search #keyword {
+    width: 1057px;
+    padding-left: 15px;
+    height: 48px;
+    position: relative;
+    margin: 12px 0 12px 15px;   
+    font-size: 16px;
+    line-height: 22px;
+    color: #110038;
+    letter-spacing: 0;
+}
+
+#keyword::placeholder{
+    color: #B4B4B4;
+}
+
+
+/* //////////////////////////////////////////////////// */
+
+.buscador .search #box-search {
+    position: absolute;
+    width: 83.3%;
+    height: 160px;
+    padding-left: 15px;
+    display: none;
+    flex-direction: column;
+    margin-top: 75px;
+}
+
+.buscador .search #box-search li{
+    position: relative;
+    display: none;
+    width: 88%;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22px;
+    padding-left: 16px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    height: 20px;
+    color: #110038;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+} 
+
+.buscador .search #box-search #opcion1 {
+    color: #110038;
+    border: 1px solid #110038;
+    height: 24px;
+    margin-top: 15px;
+    margin-bottom: 11px;
+}
+
+.buscador .search #box-search #opcion2 {
+    margin-bottom: 10px;
+}
+
+.buscador .search #box-search #opcion3 {
+    margin-bottom: 16px;
+}
+
+header .buscador #rectangle {
+    width: 1057px;
+    display: flex;
+    display: inline-flex;
+    margin: 13px;
+    height: 2.9%;
+}
+
+
+
+.input {
+    margin-left: 8.5%;
+    padding-left: 0.5%;
+    width: 82%;
+    height: 32px;
+    justify-self: center;
+    text-align: left;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 14px;
+    margin-bottom: 17px;
+    align-content: center;
+}
+
+.buscar {
+    width: 102px;
+    height: 36px;
+    margin-right: 18px;
+    margin-left: 0.6%;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 18px;
+}
+
+
+#tags {
+    display: none;
+    justify-content: flex-start;
+    margin-left: 116px;
+}
+
+#tags button{
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 18px;
+    display: inline-block;
+    height: 34px;
+    margin: 12px 8px 0 0;
+}
+
+#sugerimos {
+    margin: 64Px 0 16px 8.5%;
+    height: 32px;
+}
+
+#sugerencias #gridarea {
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: 304px;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+    color: black;    
+}
+#sugerencias #img{
+    height: 100%;
+}
+
+#lookup{
+    height: 32px;
+}
+
+#gridarea .gif .btn{
+    width: 67px;
+    height: 24px;
+    position: absolute;
+    margin-top: 231px;
+    margin-right: 192px; 
+    margin-bottom: -15px;
+    margin-left: 7px;
+    margin-left: -230px;
+    padding: 5px 7px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+}
+
+#gridarea .gif:hover{
+    width: 97%;
+    height: 97%;
+}
+
+
+#tendencias .trends {
+    display: grid;
+    justify-content: center;    
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(3, 298px);
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+    color: black;
+}
+
+#tendencias .trends .double {
+    width: 205%;
+}
+
+#tendencias .trends .no {
+    display: none;
+}
+
+#tendencias .gifTrends{
+    width: 100%;
+    height: 100%;
+}
+
+#tendencias .gifTrends:hover{
+    width: 99%;
+    height: 99%;
+}
+
+#tendencias {
+    margin: 32Px 0 16px 0;
+}
+
+#misGuifosSection .misGifs {
+    display: grid;
+    justify-content: center;    
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(3, 298px);
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+}
+
+#misGuifosSection .misGifs .double {
+    width: 205%;
+}
+
+#misGuifosSection .misGifs .no {
+    display: none;
+}
+
+#misGuifosSection .miGif{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}
+
+#misGuifosSection .miGif:hover{
+    width: 99%;
+    height: 99%;
+}
+
+#misGuifosSection {
+    display: none; 
+    margin: 0 0 16px 0; 
+}
+
+#name{
+    position: relative;
+    margin: -27px 0 0 0;
+}
+
+.bar1{
+    position: relative;
+    margin: -27px 0 0 0;
+}
+
+/* Crear guifos page */
+
+.container {
+    display: flex;
+    margin-left: 60px;
+    margin-top: 56px;
+    align-items: center;
+    align-content: center;
+    width: 102.6px;
+    height: 64px;
+}
+
+
+/* ///////////////////////////////////////////////////////paginas de creacion de guifos */
+
+.cuadro1 {
+    display: flex;
+    flex-direction: column;
+    width: 684px;
+    height: 386px;
+    align-self: center;
+    justify-self: center;
+    margin: 59px auto 89px;
+    padding: 0px;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.cuadro2 {
+    display: flex;
+    flex-direction: column;
+    width: 860px;
+    height: 548px;
+    align-self: center;
+    justify-self: center;
+    margin: 69px auto 268px;
+    padding: 0px;
+}
+
+
+.close {
+    display: flex;
+    align-self: flex-end;
+    width: 16px;
+    height: 14px;
+    margin: auto 0.7% auto auto;
+}
+
+.cuadro2 .buttons {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    height: 68px;
+    width: 100%;
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+}
+
+.cuadro2 .buttons .right {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+}
+
+/* ////////////////////////////////////////////pagina de instrucciones para creacion de guifos */
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 289px;
+}
+.cuadro1 .row img {
+    width: 32px;
+    height: 32px;
+    margin-left: 25px;
+    margin-right: 16px;
+    margin-top: 30px;
+}
+.cuadro1 .instructions {
+    width: 611px;
+    text-align: start;
+}
+
+.cuadro1 .instructions h4{
+    text-align: start;
+    font-weight: 700;
+    font-size: 16px;
+    color: #110038;
+    line-height: 22px;
+    margin-top: 30px;
+}
+
+.cuadro1 .instructions-box{
+    width: 518px;
+    height: 190px;
+    text-align: left;
+    font-size: 14px;
+    color: #110038;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cuadro1 .instructions-box p{
+    font-weight: 400;
+    font-size: 14px;
+    color: #110038;
+    line-height: 20px;
+    text-align: start;
+    margin: 0px;
+}
+
+.cuadro1 .instructions-box b {
+    color: #110038;
+}
+
+.cuadro1 .buttons{
+    height: 72px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 36px;
+}
+
+
+/* #cancelar y #comenzar */
+.cuadro1 .buttons .createbtn {
+    margin-left: 16px;
+}
+.createbtn:hover{
+    outline: 1px dotted #110038;
+    outline-offset: -4px;
+}
+.createbtn:active{
+    outline: 1px dotted #110038;
+    outline-offset: -4px;
+}
+
+
+/* //////////////////////////////////////////// fin pagina de instrucciones para creacion de guifos */
+
+/* //////////////////////////////////////////// pagina de un checkeo antes de empezar */
+
+.cuadrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 860px;
+    height: 456px;
+    background: #E6E6E6;
+    box-shadow: inset -2px 0 0 0 #B4B4B4, inset 2px 0 0 0 #FFFFFF;
+}
+
+.buttons{
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 0 0 0 #FFFFFF;
+}
+
+.cuadro2 .cuadrito video {
+    width: 830px;
+    height: 408;
+}
+
+.cuadro2 .cuadrito #preview {
+    width: 834px;
+    height: 408;
+    margin: 11px auto;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+
+#migifo {
+    width: 834px;
+    height: 408;
+    margin: 11px auto;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+#preview {
+    width: 806px;
+    height: 434;
+    margin: 11px auto;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.camera {
+    width: 18px;
+    height: 16.5px;
+}
+.film{
+    display: inline-flex;
+    align-self: flex-end;
+}
+.captura { 
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #110038;
+}
+#dropdown{
+    align-self: flex-end;
+}
+.captura:hover{
+    outline: 1px dotted #110038;
+    outline-offset: -4px;
+}
+.captura:active{
+    outline: 1px dotted #110038;
+    outline-offset: -4px;
+}
+.captura img{
+    display: flex;
+    align-self: center;
+}
+
+#capture{
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+
+#cuadro5 #subiendo {
+    background: #E6E6E6;
+box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 0 0 0 0 #FFFFFF;
+}
+
+#myprogress{
+    background: #B4B4B4;
+box-shadow: inset 2px 2px 0 0 #FFFCFC, inset -2px -2px 0 0 #000000;
+}
+#myBar{
+    width: 12px;
+    height: 22px;
+    border: #999 solid 2px;
+    margin-top: 2px;
+    background: #B4B4B4;
+    box-shadow: inset 2px 2px 0 0 #FFFCFC, inset -2px -2px 0 0 #000000;
+    background-color: #F7C9F3;
+}
+#myprogress2{
+    background: #B4B4B4;
+    box-shadow: inset 2px 2px 0 0 #FFFCFC, inset -2px -2px 0 0 #000000;
+}
+#myBar2{
+    width: 10%;
+    height: 100%;
+    border: #999 solid 2px;
+    background: #B4B4B4;
+    box-shadow: inset 2px 2px 0 0 #FFFCFC, inset -2px -2px 0 0 #000000;
+    background-color: #F7C9F3;
+}
+
+
+
+#cuadro5 .cuadrito {
+    text-align: center;
+    margin: 32px 16px 0 8px;
+    width: 98%;
+    height: 440px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+#cuadro5 .cuadrito img{
+    margin: 104px auto 8px auto;
+    width: 48px;
+    height: 48px;
+}
+#cuadro5 .buttons{
+    background: #E6E6E6;
+    box-shadow: inset -2px 0 0 0 #B4B4B4, inset 0 0 0 0 #FFFFFF;
+}
+#cuadro5 .buttons {
+    height: 44px;
+    display: flex;
+    justify-content: flex-end;
+}
+#cuadro5 .buttons #cancelar2 {
+    margin: 21px 11px -20px 0;
+}
+
+
+.timer {
+    height: 22px;
+    width: 86px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    margin-left: 11px;
+    margin-bottom: 16px;
+    padding: 7px 19px;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+#myProgress {
+    margin: 0 109px 26px auto;
+    width: 240px;
+    height: 24px;
+    background: #B4B4B4;
+    box-shadow: inset 2px 2px 0 0 #FFFCFC, inset -2px -2px 0 0 #000000;
+}
+
+#listo{
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+#myProgress2 {
+    margin: 0 auto;
+    width: 324px;
+    height: 20px;
+    background: #B4B4B4;
+    box-shadow: inset 2px 2px 0 0 #FFFCFC, inset -2px -2px 0 0 #000000;
+}
+
+#upload{
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+#repeat{
+    margin-right: 14px;
+    margin-bottom: 16px;
+}
+
+#myBar {
+    background-color: #999;
+    background: #F7C9F3;
+    border: #FFFCFC;
+}
+
+#pink {
+    margin-left: 35px;
+    margin-bottom: 26px;
+    width: 20px;
+    height: 20px;
+    background: #F7C9F3;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+#pink img{
+    width: 6px;
+    height: 10px;
+    margin-left: 7px;
+}
+
+.cuadro6 {
+    margin: auto;
+    width: 721px;
+    height: 391px;
+    display: flex;
+    flex-direction: column;
+    background: #E6E6E6;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+.cuadro6 .cuadrito2 {
+    display: flex;
+    flex-direction: row;
+    width: 721px;
+    height: 291px
+}
+.cuadro6 .cuadrito2 img{
+    margin-left: 27px;
+    margin-top: 32px;
+    width: 365px;
+    height: 191px;
+}
+
+.cuadro6 .cuadrito2 .options {
+    display: flex;
+    flex-direction: column;
+    width: 329px;
+    align-content: space-between;
+    justify-content: flex-start;
+    text-align: left;
+    margin-left: 27px;
+    margin-top: 38px;
+}
+
+.cuadro6 .cuadrito2 .options button {
+    font-weight: 400;
+    font-size: 16px;
+    color: #110038;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 18px;
+    width: 256px;
+    height: 36px;
+    justify-content: center;
+    background: #FFF4FD;
+    margin: 7px 0;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+
+.buttonsFin{
+    background: #E6E6E6;
+}
+#fin{
+    margin-left: 531px;
+}
+#preview2 {
+    background: #FFFFFF;
+border: 1px solid #979797;
+box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
